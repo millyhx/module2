@@ -24,6 +24,7 @@ def password_creator():
      password += random.choice(chars)
    print(password)
 
+
 #main function
 def user_name():
     name = input('What is your name? ')
@@ -35,7 +36,7 @@ def user_name():
         return password_creator()
     else: 
         print('')
-        print('Okay, Goodbye')
+        print('Okay, bye')
     
 user_name()
 
