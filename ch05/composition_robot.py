@@ -39,7 +39,7 @@ class SuperRobot():
         return self.o3.clean() 
     
     
-    
+import sys   
 machineDog = SuperRobot()
 machineDog.move()
 machineDog.bark()

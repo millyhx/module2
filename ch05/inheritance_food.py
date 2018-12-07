@@ -32,6 +32,10 @@ name = input("What is your favourite food? ")
 age = int(input("How many times have you eaten it today? "))
 bark = int(input("How many times have you eaten it this week? "))
 
+import sys
+name = sys.argv[1:]
+age = sys.argv[age]
+
 userFood = foodAgent(name, age, bark)
 userFood.foodBank()
 userFood.eat()

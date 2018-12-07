@@ -21,6 +21,3 @@ MillyRobot = CleanRobot()
 MillyRobot.move()
 MillyRobot.clean()
 
-JadeRobot = CookRobot()
-JadeRobot.move()
-JadeRobot.cook()
