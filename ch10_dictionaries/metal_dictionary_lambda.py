@@ -29,6 +29,16 @@ metal_info = list(metal.keys())
 sorted(metal.items(), key=lambda kv: kv[0]) #return key and value
 sorted(metal, key=lambda k: metal[k]) #return only key
 
+#sort by key
+sorted(metal.items(), key=lambda kv: kv[0])
+sorted(metal)
+
+#sort by (2nd position of the) values:
+sorted(metal.items(), key=lambda kv: kv[1][2])
+sorted(metal, key=lambda k: metal[k][2])
+
+
+
 
 
 
