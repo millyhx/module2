@@ -4,8 +4,9 @@ Created on Mon Dec  3 09:41:59 2018
 
 @author: milly
 """
-
+#------------
 #VERSION 1
+#------------
 
 def hello_args(a,b,c,d):
     print("{} {} {} {}".format(a,b,c,d))
@@ -17,15 +18,18 @@ d = "coding"
 
 hello_args(a,b,c,d)
 
-
+#------------
 #VERSION 2
+#------------
 
 def names_args(a,b):
     print("You are called {} {}".format(a,b))
 
 names_args("melisa", "huckle")
 
+#------------
 #VERSION 3
+#------------
 
 def add_two_numbers_from_args(number1,number2):#here we are defining a function with two arguments.
     answer = number1 + number2 #the variable answer equals the two arguments.

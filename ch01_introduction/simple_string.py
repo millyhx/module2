@@ -5,7 +5,11 @@ Created on Thu Nov 29 10:15:17 2018
 
 @author: milly
 """
+#------------------
+#STRING INPUT
+#------------------
 
+#NAMING A VARIABLE AND ASSIGN THE VARIABLE OF INPUT
 name = input("What is your name? ")
 print(" Your name is " + name.upper())
 
