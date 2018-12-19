@@ -49,18 +49,18 @@ def triangle(n):
 #TASK 3
 #Code Purpose: To create a loop that determines if student marks are pass/fail/first
 
-#question_pass = "yes"
-#
-#while question_pass == "yes":
-#    mark = int(input("Enter user mark: "))
-#    mark = int(mark)
-#    print("Mark is", mark, end='')
-#    if mark >= 70:
-#        print(" - first class!")
-#    elif mark >= 40:
-#        print("- that's a pass")
-#    else:
-#        print("- that's a fail")
+question_pass = "yes"
+
+while question_pass == "yes":
+    mark = int(input("Enter user mark: "))
+    mark = int(mark)
+    print("Mark is", mark, end='')
+    if mark >= 70:
+        print(" - first class!")
+    elif mark >= 40:
+        print("- that's a pass")
+    else:
+        print("- that's a fail")
     
 
 #SET THE VARIABLE MARK TO 1
@@ -106,3 +106,4 @@ def greeting():
 #IF THE NAME IS EQUAL TO DONE
 #STOP THE PROGRAM
 #OTHERWISE, PRINT HELLO AND THE NAME GIVEN FROM INPUT
+        

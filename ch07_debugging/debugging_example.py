@@ -13,6 +13,9 @@ result = userInput - 2
 
 userInput = input("please give a number: ")
 print(type(userInput))
+userInput = int(userInput)
+result = userInput - 2
+print(result)
 
 #CAN USE THE TYPE METHOD TO CHECK WHAT DATA
 #TYPE THE INPUT IS. IF YOU ARE GIVING AN INTEGER
@@ -21,8 +24,10 @@ print(type(userInput))
 userInput = input("Please give a number ")
 
 def simpleOperation(userInput):
-    result = userInput - 2
+    intInput = int(userInput)
+    result = intInput - 2
     return result
+
 def nestedOperation():
     result = simpleOperation(userInput)
     result2 = result * 2
