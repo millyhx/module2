@@ -32,6 +32,9 @@ phonebook["milly"] = 3863
 phonebook["mari"] = 8885
 phonebook["seraphine"] = 3385
 
+#retrieving value from the key
+phonebook.keys()[0]
+
 #delete a value of a key:
 del phonebook["milly"]
 
