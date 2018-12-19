@@ -48,6 +48,7 @@ y = sorted(x)
 
 a = [0,1,2,3,4,5,6,7,8,9]
 del a[-1]
+#will not work, it is intentionally compared with lists
 
 b = (0,1,2,3,4,5,6,7,8,9)
 del b[-1]
