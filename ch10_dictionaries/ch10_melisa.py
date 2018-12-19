@@ -33,7 +33,7 @@ phonebook["mari"] = 8885
 phonebook["seraphine"] = 3385
 
 #retrieving value from the key
-phonebook.keys()[0]
+print(phonebook["milly"])
 
 #delete a value of a key:
 del phonebook["milly"]
