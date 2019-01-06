@@ -46,12 +46,12 @@ y = sorted(x)
 #TUPLES
 #----------------
 
-a = [0,1,2,3,4,5,6,7,8,9]
+a = [0,1,2,3,4,5,6,7,8,9] #list
 del a[-1]
 #Will not work, it is intentionally compared with lists because tuples are immutable. 
 
-b = (0,1,2,3,4,5,6,7,8,9)
-del b[-1]
+b = (0,1,2,3,4,5,6,7,8,9) #tuple
+del b[-1]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
 a = [0,1,2,3,4,5,6,7,8,9]
 a[0] = 50
