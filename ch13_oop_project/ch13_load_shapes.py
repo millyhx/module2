@@ -5,7 +5,7 @@ Created on Sun Jan 06 17:36:10 2019
 @author: Milly
 """
 
-from functionsMove import *
+from MovingShapes import *
 
 frame = Frame(300,300)
 square = Square(frame, 50)

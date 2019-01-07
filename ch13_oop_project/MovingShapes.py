@@ -16,7 +16,7 @@ class MovingShape:
         self.diameter = diameter
         self.figure = Shape(shape, diameter)
 
-        #Here I am initialising X and Y, they are also made half of the diameter. 
+        #Here I am initialising X and Y, they are also made                             half of the diameter. 
         self.x = self.diameter / 2
         self.y = self.diameter / 2
 
