@@ -24,6 +24,7 @@ class MovingShape:
         self.dx = 10 
         self.dy = 10 
         
+        #if the random integer chosen is less than 0.5 then 10 - 1.
         if (r() < 0.5):
             self.dx = self.dx * -1 
         else:
@@ -48,24 +49,25 @@ class MovingShape:
     def moveTick(self):
         self.x += self.dx
         self.y += self.dy
-        
         if (self.x < self.minx):
             self.x = self.minx + self.dx
-            self.dx = abs(self.dx)
-            
+            self.dx = abs(self.dx)   
         elif (self.x >= 0) and (self.x > self.maxx):
             self.x = self.maxx - self.dx
             self.dx = self.dx * -1
-      
         if (self.y < self.miny):
             self.y = self.miny + self.dy
-            self.dy = abs(self.dy)
-            
+            self.dy = abs(self.dy)   
         elif (self.y >= 0) and (self.y > self.maxy):
             self.y = self.maxy - self.dy
             self.dy = self.dy * -1
           
         self.figure.goto(self.x, self.y)
+        
+        
+####################
+#THE THREE SHAPES
+####################
         
 class Square(MovingShape):
     def __init__(self, frame, diameter):
