@@ -12,8 +12,8 @@ import requests
 #--------------an email into.
 def send_simple_message():
     return requests.post(
-        "https://api.mailgun.net/v3/sandbox395ddfcbf9be4b08a469b5e723fdceaa.mailgun.org/messages",
-        auth=("api", "459d7a1754347f09f22b4d75c9451859-060550c6-b59f5848"),
+        "----MAILGUN DOMAIN----",
+        auth=("api", "----USER API----"),
         data={"from": "Mailgun Sandbox <postmaster@sandbox395ddfcbf9be4b08a469b5e723fdceaa.mailgun.org>",
               "to": "Melisa Huckle <millycyb@outlook.com>",
               "subject": "Hello Melisa Huckle",
