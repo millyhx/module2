@@ -7,36 +7,14 @@ Created on Mon Jan 14 14:59:54 2019
 
 import sqlite3
 import requests
-
  
 conn = sqlite3.connect('phonebook_project.db')
 c = conn.cursor()
 
-  
-#endpoint = 'https://api.postcodes.io/postcodes/'
-#postcode = 'TA41AY'
-#response = requests.get(endpoint + postcode)
-#data = response.json()
-##print (response.url)          
-##print(data)
-#latitude = data['result']['latitude']
-#longitude = data['result']['longitude']
-#print(latitude)
-#print(longitude)
-
-
-
 ###########################
 #POSTCODE TABLE
 ###########################
-
-# create postcode table
-# read postcodes in biz table/ SELECT FROM business
-#c.execute('SELECT column FROM table WHERE column = ?', (variable,))
-    # for each postcode
-    # check if this postcode exists in postcode table /SELECT FROM  postcodes
     
-
 def create_postcode_table():
     c.execute('CREATE TABLE IF NOT EXISTS postcode_table(postcode TEXT, longitude REAL, latitude REAL)')
 
@@ -60,8 +38,6 @@ def insert_business_into_postcode():
                 print('ok')
                 latitude = data['result']['latitude']
                 longitude = data['result']['longitude']   
-                #    print(latitude)
-                #    print(longitude)
                 c.execute('INSERT INTO postcode_table(postcode, longitude, latitude) VALUES (?,?, ?)', (current, longitude,latitude))
                 conn.commit()
             else:

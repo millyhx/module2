@@ -10,9 +10,6 @@ Created on Wed Jan  9 09:08:34 2019
 ###########################
 
 import sqlite3
-import time
-import datetime
-import random
 
 #########################
 #CONNCTING THE DATABASE
@@ -53,4 +50,10 @@ def data_entry():
 #WE PREVIOUSLY CREATED COLUMNS, SO NOW WE NEED TO INSERT 4 VALUES INTO THE TABLE.
 #AFTER INSERTING, YOU NEED TO RUN THE COMMAND. 
 #ONCE THE PROCESS IS COMPLETE, YOU NEED TO CLOSE THE TABLE AND DATABASE.
-    
+
+###########################
+#CALL THE FUNCTIONS
+###########################
+
+create_table()
+data_entry()
