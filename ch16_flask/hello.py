@@ -6,8 +6,10 @@ def hello():
     return "Hello World"
 
 
-@app.route("/<name>")
+@app.route("/about")
 def hello_someone(name):
     return render_template("hello.html", name=name.title())
 
 app.run(debug=True)
+
+
