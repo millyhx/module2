@@ -42,6 +42,7 @@ def create_table():
     
 def data_entry():
     c.execute("INSERT INTO stuffToBuild VALUES(142233222, '2018-01-01', 'python', 5)")
+    
     conn.commit()
     c.close()
     conn.close()
