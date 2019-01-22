@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fairytale</title>
+        <link rel="stylesheet" href="{{url_for("static", filename="css/main.css")}}">
+    </head>
+
+    <body>
+    <section style="text-align:center;">
+        {% if gender == "female": %}
+            <p>Once upon a time, there was a girl called {{name}}.</p>
+        {% elif gender == "male": %}
+            <p>Once upon a time, there was a boy called {{name}}.</p>
+        {% endif %}
+        
+        
+        <p>{{name}} lived in a place called {{district}} where the weather was always {{weather}}.</p>
+        
+        <p>{{name}} was the youngest in the family as {{pronoun}} was only {{age}}.</p>
+        
+        <p>{{pronoun}} always wished that {{pronoun}} could own a pet. However, {{name}}'s family always said no because {{pronoun}} was too young</p>
+        
+        <p>SUDDENLY... {{name}} stumbled across something. It was a...</p>
+        
+        <p>{{pet_type}}</p>
+            
+        <p>{{name}} was so excited! {{pronoun}} decided to call it {{pet_name}}</p>
+    </section>
+    </body>
+</html>
+
