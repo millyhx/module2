@@ -4,7 +4,7 @@ Created on Tue Dec 11 14:56:33 2018
 
 @author: milly
 """
-#
+
 def DataBundlePurchase(truePasscode, balance):
     count = 0
     while count < 3:
@@ -15,7 +15,14 @@ def DataBundlePurchase(truePasscode, balance):
         else:
             print("---LOGIN FAILED")
             count += 1
-
+#    while True:
+#        try:
+#            passcode = input("ENTER PIN: ")
+#            while len(passcode) == len(truePasscode):
+#                print("---LOGIN SUCCESSFUL---")
+#        except ValueError:
+#            print("---LOGIN FAILED")
+            
 
 def checkBalance(balance):
    if balance > 0:

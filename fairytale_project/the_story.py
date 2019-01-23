@@ -27,9 +27,9 @@ def create_fairytale():
     
     
     if gender == "female":
-        pronoun = "she"
+        pronoun = "She"
     if gender == "male":
-        pronoun = "he"
+        pronoun = "He"
     
     ################
     #postcode
@@ -66,7 +66,14 @@ def create_fairytale():
    
     print("{} lived in a place called {} where the weather was always {}.".format(name,district,weather))
 
-    
+    if weather == "Mostly Cloudy":
+        weather = "Rainy"
+    elif weather == "Partly Cloudy":
+        weather = "Sunny"
+    elif weather == "Clear":
+        weather = "Snowy"
+    else:
+        weather = "Windy"
     
     ################
     #age
@@ -77,7 +84,7 @@ def create_fairytale():
         
     
     print("{} was the youngest in".format(name), pronoun,"family, as", pronoun, "was only", age)
-    print(pronoun.title(), "always wished that", pronoun, "could own a pet. However, {}'s family always said no because".format(name), pronoun, "was too young.")
+    print(pronoun, "always wished that", pronoun, "could own a pet. However, {}'s family always said no because".format(name), pronoun, "was too young.")
     
     
 
@@ -101,7 +108,7 @@ def create_fairytale():
     #pet
     ################
     
-    pets = ["dog", "cat", "llama", "skunk", "meerkat", "zebra", "cheetah", "hippo", "gerbil", "camel", "mouse"]
+    pets = ["DOG", "CAT", "LLAMA", "SKUNK", "MEERKAT", "ZEBRA", "CHEETAH", "HIPPO", "GERBIL", "CAMEL", "MOUSE"]
     
     for i in data:
         pet_type = (random.choice(pets))
@@ -111,7 +118,7 @@ def create_fairytale():
     print("{} was so excited!".format(name), pronoun.title(), "decided to call it...", pet_name.upper())
         
         
-    return render_template("fairytale_template.html", name = data["name"], gender = data["gender"], latitude = data2['result']['latitude'], longitude = data2['result']['longitude'], district = data2["result"]["admin_district"], weather = data3["currently"]["summary"], age = random.randint(5,10), pet_name = data4["name"], pets = ["dog", "cat", "llama", "skunk", "meerkat", "zebra", "cheetah", "hippo", "gerbil", "camel", "mouse"], pet_type = (random.choice(pets)), pronoun = (("he") or ("she")))
+    return render_template("fairytale_template.html", title="none", **locals())
     
 app.run(debug=True)
 create_fairytale()
